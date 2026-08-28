@@ -3,11 +3,15 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
 import { PedidoForm } from "@/components/pedido-form";
-import { PROVA_LABEL, getLaco } from "@/lib/catalog";
+import { LACOS, PROVA_LABEL, getLaco } from "@/lib/catalog";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
+
+export function generateStaticParams() {
+  return LACOS.map((laco) => ({ slug: laco.slug }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;

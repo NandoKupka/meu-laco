@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { buttonVariants } from "@/components/ui/button";
+import { BASE_PATH } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export default function HomePage() {
@@ -9,7 +10,7 @@ export default function HomePage() {
     <div className="relative flex flex-1 flex-col">
       <div className="relative min-h-[calc(100dvh-8.5rem)] overflow-hidden">
         <Image
-          src="/arena-hero.png"
+          src={`${BASE_PATH}/arena-hero.png`}
           alt=""
           fill
           priority

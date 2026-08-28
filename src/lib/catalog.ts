@@ -1,3 +1,5 @@
+import { BASE_PATH } from "./site";
+
 export type Prova = "cabeca" | "pe" | "individual";
 export type Maciez =
   | "extra-macia"
@@ -24,9 +26,9 @@ export type Laco = {
 };
 
 export const MARCA_FOTO: Record<Marca, string> = {
-  "Serra Brava": "/lacos/serra-brava.png",
-  "Pampa Line": "/lacos/pampa-line.png",
-  "Giro Forte": "/lacos/giro-forte.png",
+  "Serra Brava": `${BASE_PATH}/lacos/serra-brava.png`,
+  "Pampa Line": `${BASE_PATH}/lacos/pampa-line.png`,
+  "Giro Forte": `${BASE_PATH}/lacos/giro-forte.png`,
 };
 
 export const LACOS: Laco[] = [
