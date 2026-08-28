@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { ResultadoView } from "@/components/resultado-view";
 
 export const metadata: Metadata = {
-  title: "O teu laÃ§o",
+  title: "O teu laço",
 };
 
 export default function ResultadoPage() {

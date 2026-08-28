@@ -17,7 +17,7 @@ export function ResultadoView() {
       <div className="mx-auto w-full max-w-lg flex-1 px-4 py-16">
         <h1 className="font-heading text-3xl">Falta alguma resposta</h1>
         <p className="mt-2 text-muted-foreground">
-          Volta e escolhe prova, giro e mÃ£o. Sem isso eu nÃ£o indico.
+          Volta e escolhe prova, giro e mão. Sem isso eu não indico.
         </p>
         <Link href="/escolher" className={buttonVariants({ className: "mt-6" })}>
           Me ajuda a escolher
@@ -28,8 +28,8 @@ export function ResultadoView() {
 
   return (
     <div className="mx-auto w-full max-w-5xl flex-1 px-4 py-10 sm:px-6 sm:py-14">
-      <p className="text-sm text-muted-foreground">IndicaÃ§Ã£o</p>
-      <h1 className="font-heading text-4xl">O teu laÃ§o</h1>
+      <p className="text-sm text-muted-foreground">Indicação</p>
+      <h1 className="font-heading text-4xl">O teu laço</h1>
       <div className="mt-8">
         <LacoCard laco={rec.principal} destaque frase={rec.frase} />
       </div>
@@ -43,7 +43,7 @@ export function ResultadoView() {
                 laco={laco}
                 frase={
                   rec.referencia && laco.slug === rec.referencia.slug
-                    ? "A referÃªncia que tu apontou."
+                    ? "A referência que tu apontou."
                     : index === 0
                       ? "Outra que fecha com o que tu falou."
                       : undefined
